@@ -11,6 +11,15 @@ namespace hasher {
      * @return the area of the circle
      * */
     double calculateCircleArea(double radius);
+
+    /**
+     * @brief takes a temperature value in Celsius and converts it to Fahrenheit
+     *
+     * @param celsius the temperature value in celsius
+     *
+     * @return the temperature in Fahrenheit
+     * */
+    double celsiusToFahrenheit(double celsius);
 }
 
 #endif //HASHER_BASE1_H
