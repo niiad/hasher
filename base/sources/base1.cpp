@@ -5,3 +5,7 @@ double hasher::calculateCircleArea(double radius) {
 
     return PI * radius * radius;
 }
+
+double hasher::celsiusToFahrenheit(double celsius) {
+    return (celsius * (9.0 / 5.0)) + 32.0;
+}
