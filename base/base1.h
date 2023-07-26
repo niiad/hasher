@@ -66,6 +66,17 @@ namespace hasher {
         return (num <= 1) ? result : tailRecursiveFactorial(num - 1, num * result);
      }
 
+     /**
+      * @brief checks if a number is an even number or an odd number
+      *
+      * @param num the number that is either even or odd
+      *
+      * @return returns 'true' if the number is even, otherwise 'false'
+      * */
+     inline constexpr bool isEvenOrOdd(int num) {
+         return num % 2 == 0;
+     }
+
 }
 
 #endif //HASHER_BASE1_H
