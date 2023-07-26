@@ -96,6 +96,25 @@ namespace hasher {
          }
      }
 
+     /**
+      * @brief checks if a given input string is a palindrome or not
+      *
+      * @param word the given input string
+      *
+      * @return 'true' if the input string is a palindrome, otherwise 'false'
+      * */
+      inline bool isPalindrome(const std::string& word) {
+          size_t length = word.length();
+
+          for (size_t i = 0; i < length / 2; ++i) {
+              if (word[i] != word[length - 1 - i]) {
+                  return false;
+              }
+          }
+
+          return true;
+      }
+
 }
 
 #endif //HASHER_BASE1_H
