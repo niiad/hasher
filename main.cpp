@@ -2,6 +2,10 @@
 #include "base/base1.h"
 
 int main() {
-    std::cout << hasher::factorial(5) << std::endl;
+    std::string input = "Hash";
+
+    hasher::reverseString(input);
+
+    std::cout << input << std::endl;
     return 0;
 }

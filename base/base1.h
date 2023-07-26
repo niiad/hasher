@@ -36,7 +36,7 @@ namespace hasher {
     inline constexpr unsigned long long factorial(unsigned int num) {
         unsigned long long result = 1;
 
-        for (int i = 2; i <= num; ++i) {
+        for (size_t i = 2; i <= num; ++i) {
             result *= i;
         }
 
@@ -75,6 +75,25 @@ namespace hasher {
       * */
      inline constexpr bool isEvenOrOdd(int num) {
          return num % 2 == 0;
+     }
+
+     /**
+      * @brief reverses the characters of an input string
+      *
+      * @param word the string to reverse its characters
+      *
+      * */
+     inline void reverseString(std::string& word) {
+         size_t length = word.length();
+
+         for (size_t i = 0; i < length / 2; ++i) {
+             // swap characters from the beginning and end of the string
+             char temp = word[i];
+
+             word[i] = word[length - 1 - i];
+             word[length - 1 - i] = temp;
+
+         }
      }
 
 }
